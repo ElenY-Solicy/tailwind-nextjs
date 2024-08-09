@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FooterColumn from "../shared/FooterColumn";
-import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "@/constants";
+import { footer_contact_info, footer_links, social } from "@/constants";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
             <Image src="hilink-logo.svg" alt="logo" width={74} height={29} />
           </Link>
           <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
-            {FOOTER_LINKS.map((columns) => (
+            {footer_links.map((columns) => (
               <FooterColumn title={columns.title} key={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
                   {columns.links.map((link) => (
@@ -24,8 +24,8 @@ const Footer = () => {
               </FooterColumn>
             ))}
             <div className="flex flex-col gap-5">
-              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
+              <FooterColumn title={footer_contact_info.title}>
+                {footer_contact_info.links.map((link) => (
                   <Link
                     href="/"
                     key={link.label}
@@ -40,9 +40,9 @@ const Footer = () => {
               </FooterColumn>
             </div>
             <div className="flex flex-col gap-5">
-              <FooterColumn title={SOCIALS.title}>
+              <FooterColumn title={social.title}>
                 <ul className="regular-14 flex gap-4 text-gray-30">
-                  {SOCIALS.links.map((link) => (
+                  {social.links.map((link) => (
                     <Link href="/" key={link}>
                       <Image src={link} alt="logo" width={24} height={24} />
                     </Link>

@@ -1,5 +1,5 @@
 // NAVIGATION
-export const NAV_LINKS = [
+export const nav_links = [
   { href: "/", key: "home", label: "Home" },
   { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
   { href: "/", key: "services", label: "Services" },
@@ -8,7 +8,7 @@ export const NAV_LINKS = [
 ];
 
 // CAMP SECTION
-export const PEOPLE_URL = [
+export const people_url = [
   "/person-1.png",
   "/person-2.png",
   "/person-3.png",
@@ -16,7 +16,7 @@ export const PEOPLE_URL = [
 ];
 
 // FEATURES SECTION
-export const FEATURES = [
+export const feature = [
   {
     title: "Real maps can be offline",
     icon: "/map.svg",
@@ -48,7 +48,7 @@ export const FEATURES = [
 ];
 
 // FOOTER SECTION
-export const FOOTER_LINKS = [
+export const footer_links = [
   {
     title: "Learn More",
     links: [
@@ -66,7 +66,7 @@ export const FOOTER_LINKS = [
   },
 ];
 
-export const FOOTER_CONTACT_INFO = {
+export const footer_contact_info = {
   title: "Contact Us",
   links: [
     { label: "Admin Officer", value: "123-456-7890" },
@@ -74,7 +74,7 @@ export const FOOTER_CONTACT_INFO = {
   ],
 };
 
-export const SOCIALS = {
+export const social = {
   title: "Social",
   links: [
     "/facebook.svg",

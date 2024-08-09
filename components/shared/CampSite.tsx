@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PEOPLE_URL } from "@/constants";
+import { people_url } from "@/constants";
 
 interface CampProps {
   backgroundImage: string;
@@ -31,7 +31,7 @@ const CampSite = ({
 
         <div className="flexCenter gap-6">
           <span className="flex -space-x-4 overflow-hidden">
-            {PEOPLE_URL.map((url) => (
+            {people_url.map((url) => (
               <Image
                 className="inline-block h-10 w-10 rounded-full"
                 src={url}
